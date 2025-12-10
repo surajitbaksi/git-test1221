@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function clickMe(){
+        document.getElementById('my_para').innerHTML='This is a new para'
+    }
+     function styleMe(){
+        document.getElementById('my_para').style.color='red'
+    }
+    alert('welcome here');
+    function addtobag(){
+            alert('Items added to bag');
+    }
+    function addToWishlist(){
+        alert('items added to wishlist')
+    }
+    </script>
+    <style>
+        .my_button{
+            background-color: burlywood;
+        }
+        #add-to-bag{
+                border-radius: 10px;
+                padding: 3px 20px;
+                background-color: greenyellow;
+                border: 0px;
+
+        }
+        #wishlidt{
+            text-transform: uppercase;
+            padding:3px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script src="recurssion.js"></script>
+    <main>
+    <h1>My First</h1>
+    <p>this is demo</p>
+    <p id="my_para">This is a demo para</p>
+    <button onclick="clickMe()">Click Me</button>
+    <button onclick="styleMe()">Style Me</button>
+    <button>Click</button>
+    <button id="first_button" class="my_button">First</button>
+    <button id="second_button" class="my_button">Second</button>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aperiam temporibus non. Minima doloremque amet dolore odit ipsum harum non temporibus! Incidunt quasi fuga nesciunt.</p> 
+    <button onclick="addtobag()"  id="add-to-bag" class="my_button">Add to Bag</button>
+    <button onclick="addToWishlist()" id="wishlidt" class="my_button">Wishlist</button>   
+</main>
+</body>
+</html>
